@@ -1,4 +1,7 @@
 🎬 Silver Screen
+
+
+
 Silver Screen is a Flutter-based movie app with Firebase Authentication & CRUD Operations. Users can browse movies, search, view details, filter by genre, and update their profile.
 
 📌 Features
