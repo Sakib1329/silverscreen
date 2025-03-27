@@ -58,6 +58,31 @@ class Mylist extends StatelessWidget {
               scrollDirection: Axis.horizontal,
               itemCount: listcontroller.mymovielist.length,),),
           ),
+          SizedBox(height: 10,),
+
+          Text('  Listed Tv shows',style: TextStyle(color: Colors.white,fontSize: 25,fontWeight: FontWeight.bold),),
+          SizedBox(height: 10,),
+          Container(
+            height: 300,
+
+            child: Obx(()=>ListView.builder(itemBuilder: (context, index){
+              final Ltvshows=listcontroller.mytvlist;
+              return Container(
+                margin: EdgeInsets.all(10),
+                height: 300,
+                width: 300,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(8),
+                    border: Border.all(color: Colors.green,width: 1),
+                    image: DecorationImage(image: NetworkImage(listcontroller.mytvlist[index]),fit: BoxFit.fill)
+                ),
+              );
+
+
+            },
+              scrollDirection: Axis.horizontal,
+              itemCount: listcontroller.mytvlist.length,),),
+          ),
         ],
       )
     );

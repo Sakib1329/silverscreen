@@ -170,7 +170,16 @@ class Tvshows extends StatelessWidget {
                                 ),
                                 OutlinedButton(
                                     onPressed: () {
-                                      listcontroller.getselectedmovie(Ptvshows.image);
+                                      listcontroller.getselectedtvshows(Ptvshows.image);
+                                      Get.snackbar('Success', 'Added to MyList',duration: Duration(seconds: 2),
+                                        colorText: Colors.white,
+                                        backgroundColor: Colors.green,
+                                        snackPosition: SnackPosition.BOTTOM,
+                                        icon: Icon(Icons.check, color: Colors.white),
+                                        snackStyle: SnackStyle.FLOATING,
+
+
+                                      );
 
                                     },
                                     style: OutlinedButton.styleFrom(
